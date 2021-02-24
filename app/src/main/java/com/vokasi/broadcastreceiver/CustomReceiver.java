@@ -12,7 +12,7 @@ public class CustomReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
        String intentActionn = intent.getAction();
-       if (intentAction!=null){
+       if (intentActionn!=null){
            String toastMessage ="";
            switch (intentActionn){
                case Intent.ACTION_POWER_CONNECTED:

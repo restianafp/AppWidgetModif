@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="@drawable/round_corner_main">
+
+    <LinearLayout
+        android:id="@+id/section_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:background="@drawable/round_corner">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:fontFamily="cursive"
+            android:textColor="#9b6b43"
+            android:text="WIDGET ID"/>
+        <TextView
+            android:id="@+id/appwidget_id"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textColor="#9b6b43"
+            android:text="0"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/section_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_id"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        >
+        <TextView
+            android:id="@+id/appwidget_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="X"
+            />
+        <TextView
+            android:id="@+id/appwidget_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textSize="35sp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/appwidget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/section_update"
+        android:textColor="#9b6b43"
+        android:background="@drawable/round_corner"
+        android:padding="10dp"
+        android:text="UPDATE NOW"/>
+
+
+
+
+</RelativeLayout>

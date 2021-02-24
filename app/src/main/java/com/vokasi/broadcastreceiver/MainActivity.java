@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         this.unregisterReceiver(mReceiver);
         LocalBroadcastManager.getInstance(this)
-                .unregisterReceiver(mReceiver, );
+                .unregisterReceiver(mReceiver);
         super.onDestroy();
     }
 
